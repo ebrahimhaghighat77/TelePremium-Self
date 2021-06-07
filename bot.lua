@@ -1673,8 +1673,7 @@ function tdbot_update_callback (data)
 				end
 				if Majhol_Self:match('^راهنما$') or Majhol_Self:match('^help$') then
 					tdbot.deleteMessages(msg.chat_id, msg.id, true)
-					---io.popen('cd Data && rm -rf HelpSelf.pdf && wget wget http://telepremium.ir/TelePremium/HelpSelf.pdf'):read('*a')
-					tdbot.sendDocument(msg.chat_id, './HelpSelf.pdf', 'راهنمای سلف شما', nil, msg.id, 0, 1, nil, dl_cb, nil)
+					tdbot.sendDocument(msg.chat_id, './Data/HelpSelf.pdf', 'راهنمای سلف شما', nil, msg.id, 0, 1, nil, dl_cb, nil)
 				end
 			end
 			end
