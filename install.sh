@@ -86,7 +86,7 @@ return _
 end
 EOF
 echo ""
-green "اطلاعات ذخیره شد."
+green "اطلاعات ذخیره شد :)"
 mv DataConfig.lua Data
 mv HelpSelf.pdf Data
 
